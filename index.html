@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body class="bg-slate-100">
+  <!-- Hero Image -->
+  <img src="source/IMG-20250414-WA0003.jpg" class="w-full h-auto" alt="Hero">
+
+  <!-- Hero Title -->
+  <h1 class="relative mt-28 mx-auto text-white text-4xl font-bold text-center
+         md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
+    Selamat datang di Senada Pictures
+  </h1>
+
+  <!-- Navbar -->
+  <header class="bg-transparent backdrop-blur-sm fixed top-0 left-0 w-full z-50 border-b border-gray-300">
+    <div class="container mx-auto flex items-center justify-between p-4">
+
+      <!-- Logo -->
+      <div>
+        <img class="h-16" src="source/NEW_SENADA_PICTURES_LOGO[1].png" alt="Logo">
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 text-black font-medium">
+        <li class="relative">
+          <button id="btn-video" class="hover:text-blue-600">Videography</button>
+          <div id="dropdown-video" class="absolute hidden bg-white border shadow-lg rounded-md mt-2 w-48 z-50">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Wedding</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Company Profile</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Event</a>
+          </div>
+        </li>
+        <li class="relative">
+          <button id="btn-photo" class="hover:text-blue-600">Fotography</button>
+          <div id="dropdown-photo" class="absolute hidden bg-white border shadow-lg rounded-md mt-2 w-48 z-50">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Prewedding</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Product</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Event Documentation</a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Hamburger Button -->
+      <button id="navbar-toggle" type="button"
+        class="md:hidden flex flex-col justify-center items-center w-10 h-10 text-sm text-gray-700 rounded-lg focus:outline-none">
+        <span class="block w-6 h-0.5 bg-black mb-1 transition duration-300"></span>
+        <span class="block w-6 h-0.5 bg-black mb-1 transition duration-300"></span>
+        <span class="block w-6 h-0.5 bg-black transition duration-300"></span>
+      </button>
+    </div>
+
+    <!-- Off-Canvas Mobile Menu -->
+    <div id="navbar-menu"
+      class="absolute top-full left-0 right-[-100%] w-full bg-white border-t border-gray-300 transition-all z-40 duration-300 ease-in-out md:hidden hidden flex-col space-y-4 p-6">
+      <a href="#" class="block text-black font-medium hover:text-blue-600">Videography</a>
+      <a href="#" class="block text-black font-medium hover:text-blue-600">Fotography</a>
+      <a href="#" class="block text-black font-medium hover:text-blue-600">About Us</a>
+      <a href="#" class="block text-black font-medium hover:text-blue-600">Contact</a>
+    </div>
+  </header>
+
+  <!-- Content Section -->
+  <section class="bg-cover bg-center bg-no-repeat py-20 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 p-8 items-start">
+      <img src="source/IMG-20250414-WA0005.jpg" alt="photowed" class="w-full">
+      <div class="text-justify leading-relaxed">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptates a rem fugiat, soluta et assumenda.
+          Sequi ratione odit soluta sit quas laborum ab id harum porro, earum corporis doloribus?
+        </p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-4  rounded-s-md">
+      <img src="source/IMG-20250414-WA0007.jpg" class="" alt="extra">
+      <img src="source/IMG-20250414-WA0007.jpg" class="w-400" alt="extra">
+      <img src="source/IMG-20250414-WA0007.jpg" class="w-400" alt="extra">
+      <img src="source/IMG-20250414-WA0007.jpg" class="w-400" alt="extra">
+    </div>
+  </section>
+
+  <!-- JS Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
